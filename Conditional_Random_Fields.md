@@ -94,7 +94,7 @@ $$
 
 + 标记变量 $\mathbf y$ 可以是结构型变量，即其分量之间具有某种相关性．在词性标注任务中，观测数据为语句（即单词序列），标记为相应的词性序列，具有线性序列结构，如图 (a) 所示；在语法分析任务中，输出标记则是语法树，具有树形结构，如图 (b) 所示．
 
-![part-of-speech and parse tree](tagging.PNG)
+![part-of-speech and parse tree](img/tagging.PNG)
 
 ### 0.6 Entropy, Conditional Entropy
 
@@ -253,7 +253,7 @@ $$
 + 隐马尔可夫模型中的变量可分为两组．第一组是状态变量
   $\left\{y_{1}, y_{2}, \ldots, y_{n}\right\}$ 其中 $y_{i} \in \mathcal{Y}$ 表示第 $i$ 时刻的系统状态．通常假定状态变量是隐藏的、不可被观测的，因此状态变量亦称隐变量（hidden variable）.第二组是观测变量 $\{x_1, \cdots,x_n\}$, 其中 $x_i \in \mathcal{X}$ 表示第 $i$ 时刻的观测值. 
 
-![](D:\Study_V\Algorithm_Analysis\Papers\HMM.PNG)
+![](img/HMM.PNG)
 
 + 图中的箭头表示了变量间的依赖关系．在任一时刻，观测变量的取值仅依赖于状态变量，即 $x_t$ 由 $y_t$ 确定，与其他状态变量及观测变量的取值无关．这即所谓的"马尔可夫链": 系统下一时刻的状态仅由当前状态决定, 不依赖以往的任何状态. 基于这种关系, 所有变量的联合概率分布为:
 
@@ -307,7 +307,7 @@ $$
 
 ## 2. Label Biased Problem
 
-![](Label_Biased_Problem.jpg)
+![](img/Label_Biased_Problem.jpg)
 
 + 原因: 局部归一化导致的不满足优化原则: 动态规划算法 Viterbi 失效. (考虑之前在 MEMM 中的讨论)
 
@@ -335,7 +335,7 @@ $$
 P(Y_A,Y_B | Y_C) = P(Y_A | Y_C) P(Y_B | Y_C)
 $$
 
-![](Global_Markov.PNG)
+![](img/Global_Markov.PNG)
 
 + 局部马尔可夫性
 + 成对马尔可夫性
@@ -376,7 +376,7 @@ $$
 
 #### 3.2.1 Definition (2)
 
-![](chain_CRF.PNG)
+![](img/chain_CRF.PNG)
 
 + 在定义中并没有要求 $X$ 和 $Y$ 具有相同的结构. 现实中，一般假设 $X$ 和 $Y$ 有相同的图结构. 本文主要考虑无向图为如图所示的线性链的情况, 即
 
@@ -457,7 +457,7 @@ $$
 
 #### 3.2.5 Instance
 
-![](matrix_instance.png)
+![](img/matrix_instance.png)
 $$
 M_{1}(x)=\left[ \begin{array}{cc}{a_{01}} & {a_{02}} \\ {0} & {0}\end{array}\right], \quad M_{2}(x)=\left[ \begin{array}{ll}{b_{11}} & {b_{12}} \\ {b_{21}} & {b_{22}}\end{array}\right]
 $$
