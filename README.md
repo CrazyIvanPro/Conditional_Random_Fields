@@ -1,2 +1,6 @@
 # Conditional_Random_Fields
-Conditional Random Fields
+An Introduction to Conditional Random Fields without prior knowledge.
+
++ Lecture Slides
++ Notes
+
